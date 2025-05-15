@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -19,6 +20,8 @@ header {
   justify-content: center;
   gap: 1.5rem;
   padding: 2rem;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card {
@@ -30,18 +33,19 @@ header {
   text-decoration: none;
   color: #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, background 0.3s;
+  transition: transform 0.2s;
+  display: block;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  background: #f9fafc;
 }
 
 .about {
   text-align: center;
   padding: 1rem;
-  font-size: 0.9em;
+  font-size: 1.1em;
+  max-width: 600px;
 }
 
 .contact {
@@ -50,6 +54,9 @@ header {
   text-align: center;
   margin-top: 2rem;
   border-top: 2px solid #ccc;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contact a {
